@@ -1,0 +1,37 @@
+
+Link to the task:
+https://www.figma.com/file/ZflDhHia1Eq4s4zSisKCmX/Test-Sample-for-Dev-Candidates?type=design&node-id=0-1&t=gwCfJDorVArDJDsP-0
+
+Task Description:
+Your task is to create a responsive burger menu with listed items in the navigation, as well as a countdown feature.
+
+
+Additionally, you need to incorporate a drop-down menu for Frequently Asked Questions (FAQs) with placeholder text (such as lorem ipsum). The task should be developed using HTML, CSS, and JavaScript.
+
+
+Technical Requirements:
+Use the following technologies: HTML, CSS, and JS.
+
+Ensure responsiveness from 1920px to 320px, covering a wide range of resolutions.
+
+Pay attention to background elements and make sure they are visually appealing and responsive.
+
+Create a burger menu with listed items in the navigation.
+
+Implement a countdown feature that counts down to a specific number (the actual number is not important, as long as the countdown functionality works).
+
+Develop a drop-down menu for Frequently Asked Questions, with placeholder text for the FAQ content.
+
+Submission Instructions: 
+You have time to complete and send the task to   hr@alphaefficiency.com and pavlep@alphaefficiency.me  by Thursday 26th of October by the end of the day.
+
+Once completed, please upload the task to a GitHub repository.
+
+Provide a link to the GitHub repository where we can review your code.
+
+Additionally, share a live preview link that allows us to view the task on various resolutions.
+
+Bonus Points:
+We appreciate a strong focus on user experience. 
+
+While not mandatory, please consider enhancing the user experience through attention to detail in areas such as buttons, links, and overall interactivity.

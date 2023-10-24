@@ -1,0 +1,240 @@
+:root {
+  --white: #ffffff;
+
+  --light: #f9f9f9;
+
+  --dark: #333333;
+
+  --pink: #dd71c6;
+
+  --lightBlue: #73c3f4;
+
+  --blue: #0083d3;
+
+  --yellow: #ffd900;
+
+  -sections-m: 390px;
+}
+
+/* Structures  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+article {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 5em 1fr 5em;
+  grid-template-columns: 100%;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+section .content {
+  margin-left: var(--sections-m);
+  margin-right: var(--sections-m);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  display: inline-flex;
+  padding: 10px 14px;
+  align-items: flex-start;
+  gap: 10px;
+  border: none;
+  color: var(--white);
+}
+
+/* Texts  */
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+/* Sections  backgrounds*/
+
+header {
+}
+section:nth-child(1) {
+  background: var(--light);
+}
+section:nth-child(2) {
+  background: var(--pink);
+  z-index: 3;
+}
+section:nth-child(3) {
+  background: var(--lightBlue);
+}
+section:nth-child(4) {
+  background: var(--white);
+}
+section:nth-child(5) {
+  background: var(--light);
+}
+section:nth-child(6) {
+  background: var(--white);
+}
+
+footer {
+  background: var(--light);
+}
+
+/* Header  */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+}
+
+header .logo {
+  margin-left: var(--sections-m);
+}
+
+header nav ul {
+  display: flex;
+  margin-right: var(--sections-m);
+  position: relative;
+  z-index: 2;
+}
+
+header nav ul li {
+  margin: 0 2em;
+  font-size: 14px;
+}
+
+header nav ul li:hover {
+  scale: 1.05;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+/* ------------- Hero section ----------- */
+
+.hero-section .blob {
+  background: var(--yellow);
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 10% 0% 0% 0%;
+}
+
+.hero-section .content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: first baseline;
+  margin-top: 10%;
+
+  margin-bottom: 5%;
+}
+
+/* Hero presentation  */
+
+.hero-section .content .presentation {
+  width: 30%;
+  position: relative;
+}
+
+.hero-section .content .presentation h1 {
+  color: #333;
+  font-family: Libre Baskerville;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 67.5px */
+  margin-bottom: 0.5em;
+}
+
+.hero-section .content .presentation h1 span {
+  color: var(--pink);
+}
+
+.hero-section .content .presentation p {
+  width: 469px;
+  color: #333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+
+.hero-section .content .presentation button {
+  background: var(--pink);
+}
+
+/* Countdown  */
+.hero-section .content .countdown {
+  display: inline-flex;
+  padding: 41px 36px;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;
+  background: #ffffff8e;
+  backdrop-filter: blur(10px);
+  height: 321px;
+  border-radius: 50px;
+
+}
+
+.hero-section .content .countdown p {
+  margin: 2em;
+}
+
+.hero-section .content .countdown .cronometer {
+  display: flex;
+}
+
+.hero-section .content .countdown .cronometer .countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+.hero-section .content .countdown .cronometer .countdown-item h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--blue);
+  margin: 1em;
+}
+
+.hero-section .content .countdown .cronometer .countdown-item .count {
+  font-size: 50px;
+}
