@@ -29,13 +29,15 @@ body {
   height: 100%;
   user-select: none;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 article {
   height: 100vh;
   display: grid;
-  grid-template-rows: 5em 1fr 5em;
+  grid-template-rows: 5em 1fr 36.875em;
   grid-template-columns: 100%;
+  
 }
 
 section {
@@ -44,11 +46,13 @@ section {
   flex-direction: column;
   align-items: center;
   z-index: 2;
+
 }
 
 section .content {
   margin-left: var(--sections-m);
   margin-right: var(--sections-m);
+
 }
 
 li {
@@ -67,6 +71,7 @@ button {
   gap: 10px;
   border: none;
   color: var(--white);
+  cursor: pointer;
 }
 
 /* Texts  */
@@ -82,7 +87,9 @@ h1 {
 header {
 }
 section:nth-child(1) {
+  position: relative;
   background: var(--light);
+  z-index: 3;
 }
 section:nth-child(2) {
   background: var(--pink);
@@ -90,15 +97,19 @@ section:nth-child(2) {
 }
 section:nth-child(3) {
   background: var(--lightBlue);
+  z-index: 3;
 }
 section:nth-child(4) {
   background: var(--white);
+  z-index: 3;
 }
 section:nth-child(5) {
   background: var(--light);
+  z-index: 3;
 }
 section:nth-child(6) {
   background: var(--white);
+  z-index: 3;
 }
 
 footer {
@@ -136,7 +147,25 @@ header nav ul li:hover {
   transition: 0.5s;
 }
 
+.decorative-circle {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  border-radius: 50%;
+  border: 28px solid var(--white);
+
+}
+
+.card {
+  background: var(--white);
+  display: inline-flex;
+  border-radius: 20px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.03);
+}
+
 /* ------------- Hero section ----------- */
+.hero-section{
+}
 
 .hero-section .blob {
   background: var(--yellow);
@@ -146,7 +175,15 @@ header nav ul li:hover {
   right: 0;
   top: 0;
   z-index: 0;
-  border-radius: 10% 0% 0% 0%;
+  border-radius: 50px 0% 0% 0%;
+}
+
+.hero-section .blob .decorative-circle {
+  width: 436px;
+  height: 436px;
+  flex-shrink: 0;
+  left: 60%;
+  opacity: 0.15;
 }
 
 .hero-section .content {
@@ -199,20 +236,23 @@ header nav ul li:hover {
 
 /* Countdown  */
 .hero-section .content .countdown {
-  display: inline-flex;
   padding: 41px 36px;
-  flex-direction: column;
-  align-items: center; 
-  gap: 10px;
   background: #ffffff8e;
   backdrop-filter: blur(10px);
   height: 321px;
   border-radius: 50px;
+}
 
+.hero-section .content .countdown .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section .content .countdown p {
   margin: 2em;
+  margin-top: 0.3em;
 }
 
 .hero-section .content .countdown .cronometer {
@@ -223,7 +263,7 @@ header nav ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1em;
+  margin: 1em 0;
 }
 
 .hero-section .content .countdown .cronometer .countdown-item h3 {
@@ -237,4 +277,514 @@ header nav ul li:hover {
 
 .hero-section .content .countdown .cronometer .countdown-item .count {
   font-size: 50px;
+  margin: 1em;
+}
+
+/* Decorative circles hero section  */
+.hero-section .decorative-circle {
+  width: 368px;
+  height: 368px;
+  top: 20%;
+  left: -5%;
+}
+
+/*-------- Stats section---------------  */
+
+.stats-section {
+  position: relative;
+  z-index: 2;
+}
+
+.stats-section .content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5em;
+}
+
+.stats-section .content .cards {
+  display: flex;
+}
+
+/* Card stylying */
+
+.stats-section .content .cards .card {
+  width: 249px;
+  height: 264px;
+  margin: 3em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.stats-section .content .cards .card .number {
+  color: #333;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 177.9%; /* 71.16px */
+}
+
+.stats-section .content .cards .card .number span {
+  color: #c4c4c4;
+}
+
+.stats-section .content button {
+  background: var(--yellow);
+}
+
+/* Decorative circles  */
+
+.stats-section .content .decorative-circle:nth-child(1) {
+  left: -5%;
+  width: 185px;
+  height: 185px;
+  flex-shrink: 0;
+  stroke-width: 28px;
+  stroke: #fff;
+  opacity: 0.15;
+}
+
+.stats-section .content .decorative-circle:nth-child(4) {
+  top: 10%;
+  right: -10%;
+  width: 308px;
+  height: 308px;
+  flex-shrink: 0;
+  border: 28px solid #fff;
+  opacity: 0.15;
+}
+
+/* ----------- Who is it section ------------ */
+.who-is-it-section {
+}
+
+.who-is-it-section .content {
+  margin: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.who-is-it-section .content .text {
+  width: 491px;
+  height: 497px;
+  flex-shrink: 0;
+  color: var(--white);
+}
+.who-is-it-section .content .text .row {
+  margin-bottom: 2em;
+}
+
+.who-is-it-section .content .text h2 {
+  color: var(--white);
+  font-family: "Libre Baskerville", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 51.2px */
+  margin-bottom: 1em;
+}
+
+.who-is-it-section .content .text p {
+  width: 388px;
+  color: var(--white);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+}
+
+.who-is-it-section .content .text button {
+  background: var(--pink);
+}
+
+/* Image decoration  */
+
+.who-is-it-section .content .image-composition {
+  position: relative;
+}
+.who-is-it-section .content .image-composition .decorative-circle {
+  top: -15em;
+  background-image: url("./src/img/Person\ -\ 1.png");
+}
+
+/* -------- We can help you section ---------  */
+.we-can-help-you-section {
+}
+
+.we-can-help-you-section .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5em;
+}
+
+.we-can-help-you-section .content h2 {
+  color: var(--dark);
+  text-align: center;
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 51.2px */
+  margin-bottom: 1em;
+}
+
+.we-can-help-you-section .content p {
+  width: 1140px;
+  color: #333;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin-bottom: 2em;
+}
+
+.we-can-help-you-section .content button {
+  background: var(--pink);
+}
+
+/* -------- What you'll get --------  */
+
+.what-you-get-section {
+  background: var(--light);
+}
+
+.what-you-get-section .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5em;
+  position: relative;
+}
+
+.what-you-get-section .content h2 {
+  color: var(--dark);
+  text-align: center;
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 51.2px */
+  margin: 1em;
+}
+
+.what-you-get-section .content h2 span {
+  color: var(--pink);
+}
+
+/* Cards   */
+.what-you-get-section .content .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.what-you-get-section .content .cards > div {
+  margin: 2em;
+}
+
+.what-you-get-section .content .cards .card.service-card {
+  display: flex;
+  width: 447px;
+  height: 391px;
+  padding-top: 28px;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
+  flex-shrink: 0;
+}
+
+.what-you-get-section .content .cards .card.service-card:nth-child(1) h3,
+.what-you-get-section .content .cards .card.service-card:nth-child(2) h3 {
+  color: var(--blue);
+  text-align: center;
+  font-family: "Libre Baskerville";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 172.5%; /* 41.4px */
+}
+
+.what-you-get-section .content .cards .card.service-card:nth-child(2) h3 {
+  color: var(--pink);
+}
+
+.what-you-get-section .content .cards .card.service-card .underline {
+  width: 90%;
+  height: 1px;
+  background: var(--blue);
+}
+
+.what-you-get-section
+  .content
+  .cards
+  .card.service-card:nth-child(2)
+  .underline {
+  width: 90%;
+  height: 1px;
+  background: var(--pink);
+}
+
+.what-you-get-section .content button {
+  background: var(--pink);
+}
+
+.what-you-get-section .content .cards .card.service-card ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 90%;
+}
+
+.what-you-get-section .content .cards .card.service-card ul li {
+  list-style: disc;
+  margin: 0 1em 1em;
+}
+
+/* Decorative circles  */
+.what-you-get-section .content .decorative-circle:nth-child(1) {
+  width: 386px;
+  height: 386px;
+  flex-shrink: 0;
+  left: -60%;
+}
+
+.what-you-get-section .content .decorative-circle:nth-child(4) {
+  width: 158px;
+  height: 158px;
+  flex-shrink: 0;
+  bottom: 20%;
+  right: -20%;
+}
+.what-you-get-section .content .decorative-circle:nth-child(5) {
+  width: 279px;
+  height: 279px;
+  flex-shrink: 0;
+  top: -10%;
+  right: -35%;
+}
+
+/* ------- FAQ'S section --------- */
+.faqs-section {
+}
+
+.faqs-section .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5em;
+  position: relative;
+}
+
+.faqs-section .content h2 {
+  color: var(--dark);
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 51.2px */
+}
+
+.faqs-section .content .faqs {
+  margin: 5em 0;
+}
+
+.faqs-section .content .faqs-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  align-items: center;
+  width: 1135px;
+  background: var(--light);
+  margin: 1em 0;
+  border-radius: 20px;
+}
+
+.faqs-section .content .faqs-item p {
+}
+
+.faqs-section .content .faqs-item .answer {
+  display: none;
+}
+
+.faqs-section .content .faqs-item .drop-arrow {
+  position: relative;
+  margin: 0 2em;
+}
+
+.faqs-section .content .faqs-item .drop-arrow .line-1 {
+  position: absolute;
+
+  width: 10px;
+  border-radius: 15px;
+  height: 3px;
+  background: var(--pink);
+  transform: rotate(45deg);
+}
+
+.faqs-section .content .faqs-item .drop-arrow .line-2 {
+  position: absolute;
+  left: 6px;
+  width: 10px;
+  border-radius: 15px;
+  height: 3px;
+  background: var(--pink);
+  transform: rotate(-45deg);
+}
+
+.faqs-section button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: var(--pink);
+}
+
+/* Decorative circles  */
+
+.faqs-section .decorative-circle:nth-child(2) {
+  width: 410px;
+  height: 410px;
+  flex-shrink: 0;
+  bottom: 17%;
+  left: -50%;
+  border-radius: 410px;
+  border: 28px solid #f9f9f9;
+}
+
+.faqs-section .decorative-circle:nth-child(5) {
+  width: 269px;
+  height: 269px;
+  flex-shrink: 0;
+  border-radius: 269px;
+  border: 28px solid #f9f9f9;
+  top: 2%;
+  right: -30%;
+}
+
+.faqs-section .decorative-circle:nth-child(6) {
+  width: 124px;
+  height: 124px;
+  flex-shrink: 0;
+  border: 28px solid var(--light);
+  right: -15%;
+  bottom: 15%;
+}
+
+/* -------- Footer ------  */
+footer {
+  position: relative;
+}
+footer .content,
+footer .foot-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5em;
+}
+
+/* Footer info  */
+footer .content .info {
+}
+footer .content .info p {
+  width: 443px;
+  color: var(--dark);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin: 1em 0;
+}
+
+footer .content .info .logo {
+  margin: 1em 0;
+}
+
+footer .content .info .contact {
+  display: flex;
+  align-items: center;
+}
+
+footer .content .info .contact svg {
+  margin-right: 1em;
+}
+
+footer .content .sections {
+  display: flex;
+}
+
+footer .content .sections > div {
+  margin: 0 1em;
+}
+
+footer .content .sections .section-item {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .content .sections .section-item h2 {
+  color: var(--dark);
+  font-family: "Libre Baskerville";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+  margin: 1em 0;
+}
+
+footer .content .sections .section-item a {
+  color: var(--dark);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin: 1em 0;
+}
+
+footer .foot-footer .social-icons {
+  margin-left: -12em;
+}
+
+footer .foot-footer .copyright {
+  margin-right: -10em;
+}
+
+/* Decorative circles  */
+footer .content .decorative-circle:nth-child(1) {
+  width: 230px;
+  height: 230px;
+  flex-shrink: 0;
+  stroke-width: 28px;
+  stroke: var(--white);
+  left: -2%;
+}
+
+footer .content .decorative-circle:nth-child(4) {
+  width: 368px;
+  height: 368px;
+  flex-shrink: 0;
+  border-radius: 368px;
+  border: 28px solid #fff;
+  right: -8%;
+  bottom: 15%;
 }
