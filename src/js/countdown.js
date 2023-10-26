@@ -1,4 +1,4 @@
-let countdownTo = new Date("Oct 26, 2023 06:20:50").getTime();
+let countdownTo = new Date("Oct 26, 2023 16:20:50").getTime();
 
 let interval = setInterval(() => {
   let current = new Date().getTime();
