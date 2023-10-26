@@ -1,5 +1,10 @@
 /* Tablet  */
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 900px) {
+  .article{
+    grid-template-rows: 5em 1fr 57.75em;
+  }
+
+
   /* Header */
   header {
     justify-content: space-between;
@@ -457,4 +462,131 @@
     right: -10%;
     z-index: 1;
   }
+
+  /* What you'll get  */
+
+  .what-you-get-section {
+  }
+
+  .what-you-get-section .content {
+  }
+
+  .what-you-get-section .content h2 {
+    z-index: 2;
+  }
+
+  .what-you-get-section .content .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .what-you-get-section .content .cards .card .service-card {
+    display: flex;
+    width: 440px;
+    height: 363px;
+    padding-top: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+
+  .what-you-get-section .content .cards .card.service-card h3,
+  .what-you-get-section .content .cards .card.service-card:nth-child(2) h3 {
+    width: 264px;
+    font-size: 24px;
+    z-index: 2;
+  }
+
+  .what-you-get-section .content .cards .card.service-card .underline,
+  .what-you-get-section
+    .content
+    .cards
+    .card.service-card:nth-child(2)
+    .underline {
+    width: 50%;
+  }
+
+  .what-you-get-section .content .cards .card.service-card ul li {
+    width: 275px;
+    margin: auto;
+  }
+
+  .what-you-get-section .content .decorative-circle:nth-child(1) {
+    width: 238px;
+    height: 238px;
+    flex-shrink: 0;
+
+    top: 0%;
+    left: -30%;
+    z-index: 1;
+  }
+
+  .what-you-get-section .content .decorative-circle:nth-child(4) {
+    width: 238px;
+    height: 238px;
+    flex-shrink: 0;
+    top: 50%;
+    right: -35%;
+    z-index: 1;
+  }
+  .what-you-get-section .content .decorative-circle:nth-child(5) {
+    width: 392px;
+    height: 392px;
+    flex-shrink: 0;
+    top: 60%;
+    left: -55%;
+    z-index: 1;
+  }
+
+  /* Faqs section  */
+  .faqs-section {
+  }
+
+  .faqs-section .content {
+    width: 50%;
+    margin: 5em;
+  }
+
+  .faqs-section .content h2 {
+    width: 436px;
+  }
+
+  .faqs-section .content .faqs {
+    margin-top: 1em;
+  }
+
+  .faqs-section .content .faqs-item,
+  .faqs-section .content .answer {
+    width: 439px;
+    z-index: 2;
+  }
+
+  .faqs-section .content .decorative-circle {
+    display: none;
+    z-index: 1;
+  }
+
+
+  /* Footer  */
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light);
+    position: relative;
+
+  }
+
+  footer .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+  }
+
+
 }

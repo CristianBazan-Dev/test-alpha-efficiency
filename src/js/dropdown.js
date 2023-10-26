@@ -1,10 +1,11 @@
+const faqItem = document.querySelectorAll(".faqs-item");
 const arrow = document.querySelectorAll(".drop-arrow");
 const answer = document.querySelectorAll(".answer");
 
 let activeArrow;
 let activeAnswer;
 
-arrow.forEach((element, index) =>
+faqItem.forEach((element, index) =>
   element.addEventListener("click", () => {
     if (arrow[index].className != "drop-arrow active") {
       arrow[index].classList.toggle("active");
