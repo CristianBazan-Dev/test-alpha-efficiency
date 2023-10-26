@@ -287,4 +287,174 @@
     top: 5%;
     left: 40%;
   }
+
+  /* Stats section  */
+
+  .stats-section {
+  }
+
+  .stats-section .content {
+    margin: 2em;
+    margin-bottom: 3em;
+  }
+
+  .stats-section .content .cards {
+  }
+
+  .stats-section .content .cards .card {
+    display: flex;
+    width: 146px;
+    height: 215px;
+    padding: 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    margin: 1em;
+  }
+
+  .stats-section .content .cards .card.stat-card {
+    justify-content: space-around;
+  }
+
+  .stats-section .content .cards .card.stat-card svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .stats-section .content .cards .card.stat-card .number {
+    font-size: 24px;
+  }
+
+  .stats-section .content .cards .card.stat-card p {
+    display: flex;
+    width: 123px;
+    height: 94px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+
+  .stats-section .content button {
+    margin-top: 1.5em;
+  }
+
+  .stats-section .content .decorative-circle:nth-child(1) {
+    display: none;
+  }
+
+  .stats-section .content .decorative-circle:nth-child(4) {
+    width: 181px;
+    height: 181px;
+    top: 40%;
+    right: -5%;
+    flex-shrink: 0;
+  }
+
+  /* Who-is-it-section */
+  .who-is-it-section {
+  }
+
+  .who-is-it-section .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .who-is-it-section .content .text .row h2 {
+    width: 408px;
+    font-size: 32px;
+  }
+
+  .who-is-it-section .content .text .row p {
+    width: 440px;
+    height: 130px;
+    flex-shrink: 0;
+  }
+
+  .who-is-it-section .content img {
+    margin: 5em;
+    margin-bottom: 0;
+  }
+
+  .who-is-it-section .content .decorative-circle:nth-child(1) {
+    width: 413px;
+    height: 413px;
+    flex-shrink: 0;
+    border-radius: 413px;
+    border: 28px solid #fff;
+    opacity: 0.15;
+    left: -40%;
+  }
+
+  .who-is-it-section .content .decorative-circle:nth-child(4) {
+    width: 108.983px;
+    height: 108.983px;
+    flex-shrink: 0;
+    border: 20px solid var(--white);
+    top: 50%;
+    right: 25%;
+    flex-shrink: 0;
+  }
+
+  .who-is-it-section .content .decorative-circle:nth-child(5) {
+    width: 413px;
+    height: 413px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    border-radius: 489px;
+    border: 28px solid #fff;
+    opacity: 0.15;
+    top: 5%;
+    right: -30%;
+  }
+
+  .who-is-it-section .content button {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+    align-items: center;
+  }
+
+  /* We can help you  */
+  .we-can-help-you-section {
+    background: var(--white);
+  }
+
+  .we-can-help-you-section .content {
+  }
+
+  .we-can-help-you-section .content h2 {
+    width: 439px;
+    z-index: 2;
+  }
+
+  .we-can-help-you-section .content p {
+    width: 440px;
+    text-align: justify;
+    z-index: 2;
+  }
+
+  .we-can-help-you-section .team-img-main {
+    display: none;
+  }
+
+  .we-can-help-you-section .content .team-img-alt {
+    display: block;
+    margin: 2em;
+  }
+
+  .we-can-help-you-section .content .decorative-circle {
+    display: block;
+    width: 388px;
+    height: 388px;
+    flex-shrink: 0;
+    border-radius: 388px;
+    border: 28px solid #f9f9f9;
+    top: 0;
+    right: -10%;
+    z-index: 1;
+  }
 }

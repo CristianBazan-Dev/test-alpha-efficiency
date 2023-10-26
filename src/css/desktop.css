@@ -302,6 +302,13 @@ header nav ul li:hover {
   margin: 1em;
 }
 
+.offer-announce{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
 /* Decorative circles hero section  */
 .hero-section .decorative-circle {
   width: 368px;
@@ -389,6 +396,7 @@ header nav ul li:hover {
 }
 
 .who-is-it-section .content {
+  position: relative;
   margin: 5em;
   display: flex;
   justify-content: center;
@@ -430,14 +438,33 @@ header nav ul li:hover {
   background: var(--pink);
 }
 
-/* Image decoration  */
+/* Decorative circles */
 
-.who-is-it-section .content .image-composition {
-  position: relative;
+.who-is-it-section .content .decorative-circle:nth-child(1) {
+  width: 271px;
+  height: 271px;
+  flex-shrink: 0;
+  border-radius: 271px;
+  border: 28px solid #fff;
+  left: -7%;
 }
-.who-is-it-section .content .image-composition .decorative-circle {
-  top: -15em;
-  background-image: url("./src/img/Person\ -\ 1.png");
+
+.who-is-it-section .content .decorative-circle:nth-child(4) {
+  width: 85px;
+  height: 85px;
+  top: 15%;
+  right: 25%;
+  flex-shrink: 0;
+}
+
+.who-is-it-section .content .decorative-circle:nth-child(5) {
+  width: 489px;
+  height: 489px;
+  flex-shrink: 0;
+  border-radius: 489px;
+  border: 28px solid #fff;
+  opacity: 0.15;
+  right: -10%;
 }
 
 /* -------- We can help you section ---------  */
@@ -451,6 +478,7 @@ header nav ul li:hover {
   align-items: center;
   text-align: center;
   margin: 5em;
+  position: relative;
 }
 
 .we-can-help-you-section .content h2 {
@@ -478,6 +506,14 @@ header nav ul li:hover {
 
 .we-can-help-you-section .content button {
   background: var(--pink);
+}
+
+.we-can-help-you-section .content .team-img-alt{
+  display: none;
+}
+
+.we-can-help-you-section .content .decorative-circle{
+  display: none;
 }
 
 /* -------- What you'll get --------  */
@@ -639,6 +675,7 @@ header nav ul li:hover {
   background: var(--light);
   margin: 1em 0;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .faqs-section .content .faqs-item {

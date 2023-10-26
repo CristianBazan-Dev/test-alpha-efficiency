@@ -22,8 +22,8 @@ let interval = setInterval(() => {
 
   if (dif < 0) {
     clearInterval(interval);
-    const announce = document.querySelector(".announce");
-    announce.innerHTML = "terminado";
+    const announce = document.querySelector(".offer-announce");
+    announce.innerHTML = "¡The offer has ended! <br>Contact us to know more about our services."
     showDays.innerHTML = 0;
     showHours.innerHTML = 0;
     showMinutes.innerHTML = 0;

@@ -151,7 +151,7 @@
 
                 <div class="countdown">
                   <div class="container">
-                    <p>Your offer ends in:</p>
+                    <p class="offer-announce">Your offer ends in:</p>
 
                     <div class="cronometer">
                       <div class="countdown-item">
@@ -183,12 +183,13 @@
                 high demand for service. No credit card or insurance required.
               </p>
 
-              <p class="resp-text">There are limited spots due to the Physicians schedule and the high demand for service. No credit card or insurance required.</p>
+              <p class="resp-text">
+                There are limited spots due to the Physicians schedule and the
+                high demand for service. No credit card or insurance required.
+              </p>
 
               <button>Book my appointment</button>
             </div>
-
-            <h1 class="announce"></h1>
           </div>
         </section>
 
@@ -321,6 +322,7 @@
 
         <section class="who-is-it-section">
           <div class="content">
+            <div class="decorative-circle"></div>
             <div class="text">
               <div class="row">
                 <h2>Who Is The Consultation For?</h2>
@@ -345,18 +347,19 @@
               <button>Book my appointment</button>
             </div>
 
-            <div class="image-composition">
-              <div class="decorative-circle"></div>
-              <!-- 
-              <img src="./src/img/Person - 1.png" alt="" class="person-icon" /> -->
+            <!-- Yes, I cheated on this image. I liked the challenge but I was lacking of time and there was things that needed my attention. So I created it in Photoshop and then scale it. Now i realize that the quality could be 10x times better if I used Illustrator instead of Photoshop.  -->
 
-              <div class="semi-circle"></div>
-            </div>
+            <img src="./src/img/Person - 1.png" alt="" class="person-icon" />
+
+            <div class="decorative-circle"></div>
+            <div class="decorative-circle"></div>
           </div>
         </section>
 
         <section class="we-can-help-you-section">
-          <div class="content">
+          <div class="content"> 
+            <div class="decorative-circle"></div>
+
             <h2>We Can Help You</h2>
 
             <p>
@@ -364,10 +367,20 @@
               hope. We have seen so many tricks, gimmicks and weight loss
               programs that simply do not work for us. They want us to eat like
               a pigeon, avoid all the things we love to eat and work out till we
-              cry. We are here to tell you that it doesn’t have to be that way.
-              There is hope! Technology has advanced rapidly in recent years and
-              now, with proper guidance...
+              cry.
             </p>
+
+            <p>
+              We are here to tell you that it doesn’t have to be that way. There
+              is hope! Technology has advanced rapidly in recent years and now,
+              with proper guidance...
+            </p>
+
+            <img
+              src="./src/img/Persons - 2 - alt.png"
+              alt=""
+              class="team-img-alt"
+            />
 
             <p>
               You can join the ranks of our over 15,000 satisfied clients who
@@ -380,7 +393,7 @@
 
             <button>Book my appointment</button>
           </div>
-          <img src="./src/img/Persons - 2.png" alt="" class="team-img" />
+          <img src="./src/img/Persons - 2.png" alt="" class="team-img-main" />
         </section>
 
         <section class="what-you-get-section">
@@ -770,5 +783,6 @@
     <script src="./src/js/countdown.js"></script>
     <script src="./src/js/dropdown.js"></script>
     <script src="./src/js/hamburger.js"></script>
+    <script src="./src/js/changeImage.js"></script>
   </body>
 </html>
