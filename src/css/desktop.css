@@ -463,6 +463,7 @@ header nav ul li:hover {
   height: 497px;
   flex-shrink: 0;
   color: var(--white);
+  z-index: 3;
 }
 .who-is-it-section .content .text .row {
   margin-bottom: 2em;
@@ -476,6 +477,7 @@ header nav ul li:hover {
   font-weight: 400;
   line-height: 160%; /* 51.2px */
   margin-bottom: 1em;
+  z-index: 3;
 }
 
 .who-is-it-section .content .text p {
@@ -486,6 +488,7 @@ header nav ul li:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 160%; /* 25.6px */
+  z-index: 3;
 }
 
 .who-is-it-section .content .text button {
@@ -501,6 +504,7 @@ header nav ul li:hover {
   border-radius: 271px;
   border: 28px solid #fff;
   left: -7%;
+  z-index: 1;
 }
 
 .who-is-it-section .content .decorative-circle:nth-child(4) {
@@ -509,6 +513,7 @@ header nav ul li:hover {
   top: 15%;
   right: 25%;
   flex-shrink: 0;
+  z-index: 1;
 }
 
 .who-is-it-section .content .decorative-circle:nth-child(5) {
@@ -519,6 +524,7 @@ header nav ul li:hover {
   border: 28px solid #fff;
   opacity: 0.15;
   right: -10%;
+  z-index: 1;
 }
 
 /* -------- We can help you section ---------  */
@@ -980,7 +986,41 @@ footer .content .decorative-circle:nth-child(4) {
   .hero-section .content .presentation .text {
     margin-left: -19%;
   }
+
+  .faqs-section{
+    width: 100%;
+  }
+  
+
+  .who-is-it-section .content .decorative-circle:nth-child(1){
+    opacity: .5;
+  }
+  
+  .faqs-section .content {
+    width: 70%;
+    margin: 5em;
+  }
+
+  .faqs-section .content h2 {
+    width: 436px;
+  }
+
+  .faqs-section .content .faqs {
+    margin-top: 1em;
+  }
+
+  .faqs-section .content .faqs-item,
+  .faqs-section .content .answer {
+    width: 100%;
+    z-index: 2;
+  }
+
+  .faqs-section .content .decorative-circle {
+    display: none;
+    z-index: 1;
+  }
 }
+
 
 @media only screen and (max-width: 1141px) {
   header nav ul li{
@@ -1084,4 +1124,5 @@ footer .content .decorative-circle:nth-child(4) {
     justify-content: center;
     align-items: center;
   }
+
 }
