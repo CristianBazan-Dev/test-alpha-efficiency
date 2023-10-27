@@ -856,6 +856,7 @@ header nav ul li:hover {
   bottom: 15%;
 }
 
+
 /* -------- Footer ------  */
 footer {
   position: relative;
@@ -957,6 +958,9 @@ footer .content .decorative-circle:nth-child(4) {
   right: -8%;
   bottom: 15%;
 }
+
+
+
 
 /* --------Responsive ---------  */
 

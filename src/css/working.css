@@ -1,0 +1,68 @@
+.working-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #ffffff;
+}
+
+.working-section img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.working-section .message h1 {
+  font-family: "Linda Baskerville", serif;
+  margin: 2em;
+}
+
+.working-section .message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5em;
+}
+
+.working-section .message button {
+  background-color: #dd71c6;
+  margin: 2em;
+}
+
+button:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  color: var(--white);
+  filter: brightness(1.1);
+}
+.working-section svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 50%;
+  margin-bottom: 2em;
+}
+
+.working-section .decorative-circle {
+  width: 200px;
+  height: 200px;
+  left: -10%;
+}
+
+@media only screen and (max-width: 900px) {
+  .working-section .message {
+    width: 100%;
+    text-align: center;
+  }
+  .working-section .decorative-circle {
+    display: none;
+  }
+  .working-section .message h1 {
+    font-family: "Linda Baskerville", serif;
+    margin: 2em;
+  }
+}
