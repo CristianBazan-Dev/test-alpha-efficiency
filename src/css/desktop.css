@@ -167,6 +167,7 @@ header nav ul li:hover {
   position: absolute;
   border-radius: 50%;
   border: 28px solid var(--white);
+  z-index: 1;
 }
 
 .card {
@@ -175,6 +176,7 @@ header nav ul li:hover {
   border-radius: 20px;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.03);
 }
+
 
 /* ------------- Hero section ----------- */
 .hero-section {
@@ -238,6 +240,7 @@ header nav ul li:hover {
   margin-bottom: 0.5em;
   width: 437px;
   margin-left: -4em;
+  z-index: 3;
 }
 
 .hero-section .content .presentation .first-row h1 span,
@@ -247,6 +250,7 @@ header nav ul li:hover {
 
 .hero-section .content .presentation .first-row h4 {
   display: none;
+    z-index: 3;
 }
 
 .hero-section .content .presentation p {
@@ -259,9 +263,11 @@ header nav ul li:hover {
   line-height: 160%; /* 25.6px */
   margin-bottom: 1.5em;
   text-align: left;
+  z-index: 3;
 }
 
 .hero-section .content .presentation .text {
+  z-index: 3;
   margin-left: -11em;
 }
 
@@ -445,6 +451,10 @@ header nav ul li:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.who-is-it-section .content img{
+  z-index: 3;
 }
 
 .who-is-it-section .content .text {
@@ -726,12 +736,10 @@ header nav ul li:hover {
   z-index: 2;
 }
 
-.faqs-section .content .faqs-item:hover{
+.faqs-section .content .faqs-item:hover {
   transform: scale(1.1);
   transition: 1s;
 }
-
-
 
 .faqs-section .content .answer {
   text-align: center;
@@ -848,6 +856,7 @@ footer .foot-footer {
 
 /* Footer info  */
 footer .content .info {
+  z-index: 3;
 }
 footer .content .info p {
   width: 443px;
@@ -875,6 +884,7 @@ footer .content .info .contact svg {
 
 footer .content .sections {
   display: flex;
+  z-index: 3;
 }
 
 footer .content .sections > div {
@@ -935,3 +945,31 @@ footer .content .decorative-circle:nth-child(4) {
 }
 
 /* --------Responsive ---------  */
+
+@media only screen and (max-width: 1310px) {
+  .stats-section .content .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .hero-section .content {
+    margin: 20%;
+  }
+
+  .hero-section .content .presentation .first-row {
+    margin: 5%;
+  }
+
+  .hero-section .content .presentation .first-row .countdown {
+    width: 500px;
+    left: 5%;
+  }
+
+  .hero-section .content .presentation .text {
+    margin-left: -19%;
+  }
+}
