@@ -1,7 +1,13 @@
 /* Tablet  */
 @media only screen and (max-width: 430px) {
   .page {
-    grid-template-rows: 5em 1fr 65em;
+    grid-template-rows: 5em 1fr 80em;
+  }
+
+  button {
+    width: 215px;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Header */
@@ -194,8 +200,7 @@
   /* Countdown  */
   .hero-section .content .first-row .countdown {
     display: flex;
-    width: 281px;
-    padding: 26px 36px;
+    width: inherit;
     background: #ffffff8e;
     backdrop-filter: blur(10px);
     border-radius: 50px;
@@ -223,10 +228,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     display: flex;
     width: 234px;
-    height: 107px;
   }
 
   .hero-section .content .countdown p {
@@ -319,23 +322,23 @@
   }
 
   .stats-section .content .cards {
+    display: grid;
+    grid-template-columns: 170px 170px;
   }
 
   .stats-section .content .cards .card {
     display: flex;
-    width: 146px;
-    height: 215px;
-    padding: 20px 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
+    width: 134px;
+    height: 157px;
+    padding-top: 16px;
+    gap: 0;
     flex-shrink: 0;
     margin: 1em;
   }
 
   .stats-section .content .cards .card.stat-card {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
   }
 
   .stats-section .content .cards .card.stat-card svg {
@@ -345,20 +348,23 @@
   }
 
   .stats-section .content .cards .card.stat-card .number {
-    font-size: 24px;
+    font-size: 18px;
+    margin: 0.5em;
   }
 
   .stats-section .content .cards .card.stat-card p {
     display: flex;
     width: 123px;
-    height: 94px;
+    height: 37px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .stats-section .content button {
+    justify-content: center;
+    align-items: center;
     margin-top: 1.5em;
   }
 
@@ -379,56 +385,60 @@
   }
 
   .who-is-it-section .content {
+    width: 281px;
+  }
+  .who-is-it-section .content .text .row {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 281px;
+    margin-bottom: 2em;
   }
 
   .who-is-it-section .content .text .row h2 {
-    width: 408px;
-    font-size: 32px;
+    width: 281px;
+    font-size: 24px;
   }
 
   .who-is-it-section .content .text .row p {
-    width: 440px;
-    height: 130px;
+    width: 100%;
+    height: 136px;
+    font-size: 14px;
     flex-shrink: 0;
   }
 
   .who-is-it-section .content img {
+    max-width: 300px;
     margin: 5em;
     margin-bottom: 0;
   }
 
   .who-is-it-section .content .decorative-circle:nth-child(1) {
-    width: 413px;
-    height: 413px;
-    flex-shrink: 0;
-    border-radius: 413px;
-    border: 28px solid #fff;
-    opacity: 0.15;
-    left: -40%;
+    display: none;
   }
 
   .who-is-it-section .content .decorative-circle:nth-child(4) {
-    width: 108.983px;
-    height: 108.983px;
+    width: 80px;
+    height: 80px;
     flex-shrink: 0;
     border: 20px solid var(--white);
-    top: 50%;
-    right: 25%;
+    top: 63%;
+    right: 10%;
     flex-shrink: 0;
   }
 
   .who-is-it-section .content .decorative-circle:nth-child(5) {
-    width: 413px;
-    height: 413px;
+    width: 336px;
+    height: 336px;
     flex-shrink: 0;
     flex-shrink: 0;
     border-radius: 489px;
     border: 28px solid #fff;
     opacity: 0.15;
-    top: 5%;
-    right: -30%;
+    top: 0%;
+    right: -70%;
   }
 
   .who-is-it-section .content button {
@@ -444,15 +454,19 @@
   }
 
   .we-can-help-you-section .content {
+    width: 281px;
+    display: flex;
+    justify-content: center;
   }
 
   .we-can-help-you-section .content h2 {
-    width: 439px;
+    font-size: 24px;
+    margin-left: -25%;
     z-index: 2;
   }
 
   .we-can-help-you-section .content p {
-    width: 440px;
+    width: 100%;
     text-align: justify;
     z-index: 2;
   }
@@ -464,6 +478,8 @@
   .we-can-help-you-section .content .team-img-alt {
     display: block;
     margin: 2em;
+    width: 375px;
+    height: 249px;
   }
 
   .we-can-help-you-section .content .decorative-circle {
@@ -484,34 +500,36 @@
   }
 
   .what-you-get-section .content {
+    width: 281px;
   }
 
   .what-you-get-section .content h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
     z-index: 2;
   }
-
-  .what-you-get-section .content .cards {
-    display: flex;
-    flex-direction: column;
+  .what-you-get-section .content .cards .card {
+    position: relative;
   }
-
-  .what-you-get-section .content .cards .card .service-card {
+  .what-you-get-section .content .cards .card.service-card {
     display: flex;
-    width: 440px;
-    height: 363px;
-    padding-top: 9px;
+    width: 281px;
+    height: 295px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 17px;
+    align-items: none;
+    gap: 0;
     flex-shrink: 0;
     z-index: 2;
   }
 
   .what-you-get-section .content .cards .card.service-card h3,
   .what-you-get-section .content .cards .card.service-card:nth-child(2) h3 {
+    position: absolute;
+    top: 0.5em;
     width: 264px;
-    font-size: 24px;
+    font-size: 18px;
     z-index: 2;
   }
 
@@ -521,39 +539,45 @@
     .cards
     .card.service-card:nth-child(2)
     .underline {
-    width: 50%;
+    width: 90%;
+    position: absolute;
+    top: 4em;
+    opacity: 0.5;
+  }
+
+  .what-you-get-section .content .cards .card.service-card ul {
+    width: 90%;
+    justify-content: space-around;
+    margin-left: 1em;
   }
 
   .what-you-get-section .content .cards .card.service-card ul li {
-    width: 275px;
+    width: 235px;
+    margin: 1em;
+    font-size: 12px;
     margin: auto;
   }
 
   .what-you-get-section .content .decorative-circle:nth-child(1) {
-    width: 238px;
-    height: 238px;
+    border: 17px solid var(--white);
+    width: 164px;
+    height: 164px;
     flex-shrink: 0;
-
-    top: 0%;
-    left: -30%;
+    top: -5%;
+    left: -40%;
     z-index: 1;
   }
 
   .what-you-get-section .content .decorative-circle:nth-child(4) {
-    width: 238px;
-    height: 238px;
-    flex-shrink: 0;
-    top: 50%;
-    right: -35%;
+    width: 129px;
+    height: 129px;
+    border: 17px solid var(--white);
+    top: 5%;
+    right: -25%;
     z-index: 1;
   }
   .what-you-get-section .content .decorative-circle:nth-child(5) {
-    width: 392px;
-    height: 392px;
-    flex-shrink: 0;
-    top: 60%;
-    left: -55%;
-    z-index: 1;
+    display: none;
   }
 
   /* Faqs section  */
@@ -561,27 +585,34 @@
   }
 
   .faqs-section .content {
-    width: 50%;
+    width: 310px;
     margin: 5em;
+    margin-bottom: 0;
   }
 
   .faqs-section .content h2 {
-    width: 436px;
+    font-size: 24px;
+    width: 281px;
   }
 
   .faqs-section .content .faqs {
-    margin-top: 1em;
+    margin: 1em 0;
   }
 
   .faqs-section .content .faqs-item,
   .faqs-section .content .answer {
-    width: 439px;
+    font-size: 14px;
+    width: 100%;
     z-index: 2;
   }
 
   .faqs-section .content .decorative-circle {
     display: none;
     z-index: 1;
+  }
+
+  .faqs-section button {
+    display: none;
   }
 
   /* Footer  */
@@ -594,10 +625,8 @@
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--light);
-  }
-
-  footer .content {
-    margin: 5em;
+    width: 300px;
+    margin: 1em;
   }
 
   footer .content .info {
@@ -605,50 +634,49 @@
   }
 
   footer .content .info p {
+    font-size: 14px;
     width: 300px;
   }
 
-  footer .content .info .contact {
-    align-items: center;
-  }
-
-  footer .content .info .contact svg {
-  }
-
-  footer .content .info .contact p {
+  
+  footer .content .sections{
     display: flex;
     flex-direction: column;
   }
 
-  footer .content .sections {
-    margin: 0;
-    z-index: 2;
+
+
+
+  footer .foot-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
   }
 
-  footer .foot-footer .social-icons {
-    margin-left: -3em;
+  footer .foot-footer .social-icons{
+    margin: 1em 0;
+    margin-left: -10em;
   }
 
   footer .foot-footer .copyright {
-    margin-right: -5em;
+    width: 253px;
+
+    margin-left: -8em;
   }
 
   footer .content .decorative-circle:nth-child(1) {
     width: 230px;
     height: 230px;
+    border: 28px solid var(--white);
     flex-shrink: 0;
-    top: 15%;
-    left: 10%;
+    top: 40%;
+    left: 60%;
     z-index: 1;
   }
 
   footer .content .decorative-circle:nth-child(4) {
-    width: 366px;
-    height: 366px;
-    flex-shrink: 0;
-    border-radius: 368px;
-    border: 28px solid #fff;
-    right: -3%;
-    bottom: 5%;
+    display: none;
   }
 }
