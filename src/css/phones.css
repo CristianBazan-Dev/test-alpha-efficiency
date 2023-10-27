@@ -133,10 +133,11 @@
   header .resp-menu .content button {
     margin: 5% 0;
     background: var(--yellow);
+    max-width: 200px;
   }
 
   header .resp-menu .content .social-icons {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;

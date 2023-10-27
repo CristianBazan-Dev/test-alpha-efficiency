@@ -384,6 +384,8 @@ header nav ul li:hover {
 
 .stats-section .content .cards {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Card stylying */
